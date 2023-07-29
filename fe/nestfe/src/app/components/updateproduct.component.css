@@ -1,0 +1,66 @@
+.outer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.rightSide {
+    float: left;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+    background-color: wheat;
+}
+
+.updateForm {
+    float: none;
+    height: auto;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 10%;
+    background-color: gray;
+}
+
+.updateFormTitle {
+    float: none;
+    height: 20px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.dataItem {
+    float: none;
+    height: 25px;
+    width: 100%;
+    border: 1px thin aquamarine;
+    margin-top: 10px;
+}
+
+.dataLeft {
+    float: left;
+    width: 10%;
+    height: 25px;
+    /* border: 1px solid black; */
+}
+
+.dataRight {
+    float: left;
+    width: 65%;
+    height: 25px;
+    margin-left: 5%;
+    /* border: 1px solid green; */
+}
+
+.dataCenter {
+    float: none;
+    width: 100%;
+    height: 25px;
+}
+
+.dataCenter button {
+    height: 25px;
+    margin-left: 22%;
+}

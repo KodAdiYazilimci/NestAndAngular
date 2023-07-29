@@ -7,47 +7,19 @@
     background-color: gainsboro;
 }
 
-.leftSide {
-    float: left;
-    width: 15%;
-    height: 100%;
-    background-color: gray;
-}
-
 .rightSide {
     float: left;
     width: 80%;
-    height: 100%;
+    height: auto;
     margin-left: 5%;
     background-color: wheat;
-}
-
-.accordion {
-    float: none;
-    height: auto;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 20%;
-    background-color: azure;
-}
-
-.accordionItem {
-    float: none;
-    height: 15px;
-    width: 100%;
-    border: 1px thin gray;
-}
-
-.accordionItem a {
-    text-align: left;
-    font-size: 16px;
 }
 
 .dataList {
     float: none;
     /* height: 200px; */
     height: auto;
-    width: 90%;
+    width: 700px;
     margin-top: 100px;
     background-color: coral;
 }
@@ -77,6 +49,6 @@
 .dataCol {
     float: left;
     height: 25px;
-    border: 1px solid brown;
-    margin-left: 3%;
+    /* border: 1px solid brown; */
+    /* margin-left: 3%; */
 }

@@ -1,11 +1,5 @@
 <div class="outer">
-    <div class="leftSide">
-        <div class="accordion">
-            <div class="accordionItem">
-                <a href="/index">Products</a>
-            </div>
-        </div>
-    </div>
+    <leftside></leftside>
     <div class="rightSide">
         <div class="dataList">
             <div class="dataTitle">
@@ -18,6 +12,9 @@
                 <div class="dataCol" style="width: 50%;">
                     <span>Name</span>
                 </div>
+                <div class="dataCol" style="width: 40%;">
+
+                </div>
             </div>
             <div class="dataItem" *ngFor="let prod of products">
                 <div class="dataCol" style="width: 10%;">
@@ -25,6 +22,9 @@
                 </div>
                 <div class="dataCol" style="width: 50%;">
                     <span>{{prod.Name}}</span>
+                </div>
+                <div class="dataCol" style="width: 40%;">
+                    <a href="/update?productid={{prod.Id}}">Update</a>
                 </div>
             </div>
         </div>

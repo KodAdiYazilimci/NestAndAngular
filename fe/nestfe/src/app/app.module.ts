@@ -10,11 +10,15 @@ import { MainPageComponent } from './components/mainpage.component';
 import { RouterModule } from '@angular/router';
 import { ProductRepository } from './repositories/product.repository';
 import { ProductService } from './services/product.service';
+import { UpdateProductComponent } from './components/updateproduct.component';
+import { LeftSideComponent } from './components/leftside.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent
+    LeftSideComponent,
+    MainPageComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,

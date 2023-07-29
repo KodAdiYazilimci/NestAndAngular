@@ -1,0 +1,31 @@
+<div class="outer">
+    <leftside></leftside>
+    <div class="rightSide">
+        <div class="updateForm">
+            <div class="updateFormTitle">
+                <span>Update for {{product.Name}}</span>
+            </div>
+            <div class="dataItem">
+                <div class="dataLeft">
+                    <span>Id :</span>
+                </div>
+                <div class="dataRight">
+                    <input type="text" readonly value="{{product.Id}}" />
+                </div>
+            </div>
+            <div class="dataItem">
+                <div class="dataLeft">
+                    <span>Name :</span>
+                </div>
+                <div class="dataRight">
+                    <input type="text" value="{{product.Name}}" />
+                </div>
+            </div>
+            <div class="dataItem">
+                <div class="dataCenter">
+                    <button>Güncelle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
