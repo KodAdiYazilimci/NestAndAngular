@@ -1,0 +1,32 @@
+<div class="outer">
+    <div class="leftSide">
+        <div class="accordion">
+            <div class="accordionItem">
+                <a href="/index">Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="rightSide">
+        <div class="dataList">
+            <div class="dataTitle">
+                <span>Products</span>
+            </div>
+            <div class="dataItem">
+                <div class="dataCol" style="width: 10%;">
+                    <span>ID</span>
+                </div>
+                <div class="dataCol" style="width: 50%;">
+                    <span>Name</span>
+                </div>
+            </div>
+            <div class="dataItem" *ngFor="let prod of products">
+                <div class="dataCol" style="width: 10%;">
+                    <span>{{prod.Id}}</span>
+                </div>
+                <div class="dataCol" style="width: 50%;">
+                    <span>{{prod.Name}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+.outer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.leftSide {
+    float: left;
+    width: 15%;
+    height: 100%;
+    background-color: gray;
+}
+
+.rightSide {
+    float: left;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+    background-color: wheat;
+}
+
+.accordion {
+    float: none;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+    background-color: azure;
+}
+
+.accordionItem {
+    float: none;
+    height: 15px;
+    width: 100%;
+    border: 1px thin gray;
+}
+
+.accordionItem a {
+    text-align: left;
+    font-size: 16px;
+}
+
+.dataList {
+    float: none;
+    /* height: 200px; */
+    height: auto;
+    width: 90%;
+    margin-top: 100px;
+    background-color: coral;
+}
+
+.dataTitle {
+    float: none;
+    height: 20px;
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.dataTitle span {
+    font-size: 20px;
+    color: red;
+}
+
+.dataItem {
+    float: none;
+    height: 25px;
+    width: 100%;
+    border: 1px thin aquamarine;
+    margin-top: 10px;
+}
+
+.dataCol {
+    float: left;
+    height: 25px;
+    border: 1px solid brown;
+    margin-left: 3%;
+}
