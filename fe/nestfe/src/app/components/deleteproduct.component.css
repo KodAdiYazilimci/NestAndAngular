@@ -1,0 +1,29 @@
+.popUp {
+    float: none;
+    height: 100px;
+    width: 300px;
+    position: fixed;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: red;
+}
+
+.popUpText {
+    float: none;
+    height: 13px;
+    width: 100%;
+}
+
+.popUpButtons {
+    float: none;
+    height: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.popUpButton {
+    float: left;
+    height: 20px;
+    width: 30px;
+    margin-left: 20%;
+}

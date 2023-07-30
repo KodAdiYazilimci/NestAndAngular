@@ -27,4 +27,24 @@ export class ProductService implements OnInit, HttpInterceptor {
 
         return result.data;
     }
+
+    public async getProduct(id:number):Promise<ProductModel>{
+        let result: ServiceResultData<ProductModel> = await this._productRepository.getProduct(id);
+
+        if (result.success == false) {
+            throw new Error("Error");
+        }
+
+        return result.data;
+    }
+
+    public async deleteProduct(id:number):Promise<boolean>{
+        let result: ServiceResult = await this._productRepository.deleteProduct(id);
+
+        if (result.success == false) {
+            throw new Error("Error");
+        }
+
+        return true;
+    }
 }

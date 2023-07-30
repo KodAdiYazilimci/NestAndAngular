@@ -23,10 +23,14 @@
                 <div class="dataCol" style="width: 50%;">
                     <span>{{prod.Name}}</span>
                 </div>
-                <div class="dataCol" style="width: 40%;">
-                    <a href="/update?productid={{prod.Id}}">Update</a>
+                <div class="dataCol" style="width: 20%;">
+                    <a href="/update?id={{prod.Id}}">Update</a>
+                </div>
+                <div class="dataCol" style="width: 20%;">
+                    <button (click)="delete(prod.Id)">Delete</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<deleteproduct></deleteproduct>

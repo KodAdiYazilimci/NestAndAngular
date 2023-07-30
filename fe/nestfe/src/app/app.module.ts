@@ -12,13 +12,15 @@ import { ProductRepository } from './repositories/product.repository';
 import { ProductService } from './services/product.service';
 import { UpdateProductComponent } from './components/updateproduct.component';
 import { LeftSideComponent } from './components/leftside.component';
+import { DeleteProductComponent } from './components/deleteproduct.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LeftSideComponent,
     MainPageComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    DeleteProductComponent
   ],
   imports: [
     BrowserModule,

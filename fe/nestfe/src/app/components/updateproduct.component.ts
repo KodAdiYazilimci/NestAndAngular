@@ -10,19 +10,17 @@ import { ActivatedRoute } from "@angular/router";
     providers: [ProductService]
 })
 export class UpdateProductComponent implements OnInit {
-    constructor(private route: ActivatedRoute) {
+    constructor(private route: ActivatedRoute,
+        private productService: ProductService) {
     }
 
     public product!: ProductModel;
 
-    ngOnInit(): void {
+    async ngOnInit() {
         let parameters = {};
-        this.route.queryParams.subscribe(params => {
+        this.route.queryParams.subscribe(async params => {
             parameters = params;
-
-            this.product = new ProductModel();
-            this.product.Id = params["productid"];
-            this.product.Name = "test";
+            this.product = await this.productService.getProduct(params["id"]);
         });
 
         console.log(parameters);

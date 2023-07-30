@@ -1,0 +1,13 @@
+<div ngClass="popUp" *ngIf="visible">
+    <div ngClass="popUpText">
+        <p>Are you sure you want to delete id {{productId}} ?</p>
+    </div>
+    <div ngClass="popUpButtons">
+        <div ngClass="popUpButton">
+            <button (click)="onYesClicked()">Yes</button>
+        </div>
+        <div ngClass="popUpButton">
+            <button (click)="onNoClicked()">No</button>
+        </div>
+    </div>
+</div>
