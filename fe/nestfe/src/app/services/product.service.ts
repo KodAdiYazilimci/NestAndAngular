@@ -47,4 +47,14 @@ export class ProductService implements OnInit, HttpInterceptor {
 
         return true;
     }
+    
+    public async updateProduct(product:ProductModel):Promise<boolean>{
+        let result: ServiceResult = await this._productRepository.updateProduct(product);
+
+        if (result.success == false) {
+            throw new Error("Error");
+        }
+
+        return true;
+    }
 }

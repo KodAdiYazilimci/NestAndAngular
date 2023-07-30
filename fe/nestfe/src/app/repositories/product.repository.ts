@@ -41,4 +41,17 @@ export class ProductRepository extends BaseRepository implements OnInit {
         let result = await lastValueFrom(deleteResult);
         return result;
     }
+
+    public async updateProduct(product: ProductModel): Promise<ServiceResult> {
+        let postResult: Observable<ServiceResult> = await this._http.post<ServiceResult>(
+            this.baseUrl + "/product/updateproduct?id=" + product.Id, {
+            "Id": product.Id,
+            "Name": product.Name
+        }, {
+            headers: this.getDefaultHeaders()
+        });
+
+        let result = await lastValueFrom(postResult);
+        return result;
+    }
 }

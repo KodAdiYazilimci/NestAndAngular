@@ -8,7 +8,7 @@ export class BaseRepository {
 
     public getDefaultHeaders(): HttpHeaders {
         let headers: HttpHeaders = new HttpHeaders();
-        headers = headers.append("Content-Type", "application/json");
+        headers = headers.append("Content-Type", "application/json; charset=utf-8");
         return headers;
     }
 }

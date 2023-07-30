@@ -18,12 +18,12 @@
                     <span>Name :</span>
                 </div>
                 <div class="dataRight">
-                    <input type="text" value="{{product.Name}}" />
+                    <input type="text" [(ngModel)]="productName" value="{{productName}}" />
                 </div>
             </div>
             <div class="dataItem">
                 <div class="dataCenter">
-                    <button>Güncelle</button>
+                    <button (click)="updateProduct()">Güncelle</button>
                 </div>
             </div>
         </div>
